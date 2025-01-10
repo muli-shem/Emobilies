@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Hospital</title>
+    {% load static %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            color: #007bff;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            color: #007bff;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .service-card strong {
+            font-weight: bold;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <a href="{% url 'about'%}">About </a>
+    <a href="{% url 'service'%}">Services </a>
+    <a href="{% url 'contact_submit'%}">Contact </a>
+        <h1>Our Services</h1>
+        <p>We offer a wide range of medical and healthcare services to meet your needs.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Healthcare Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Outpatient Services</h3>
+                    <p><strong>Comprehensive diagnostic and treatment services</strong></p>
+                </div>
+                <div class="service-card">
+                    <h3>Inpatient Care</h3>
+                    <p><strong>24/7 care and support in our modern facilities</strong></p>
+                </div>
+                <div class="service-card">
+                    <h3>Maternity Services</h3>
+                    <p><strong>Safe and professional care for mothers and babies</strong></p>
+                </div>
+                <div class="service-card">
+                    <h3>Emergency Services</h3>
+                    <p><strong>Quick response and medical care for emergencies</strong></p>
+                </div>
+                <div class="service-card">
+                    <h3>Specialist Consultations</h3>
+                    <p><strong>Expert care in cardiology, oncology, orthopedics, and more</strong></p>
+                </div>
+                <div class="service-card">
+                    <h3>Laboratory Tests</h3>
+                    <p><strong>Accurate and timely medical testing services</strong></p>
+                </div>
+                <div class="service-card">
+                    <h3>Pharmacy Services</h3>
+                    <p><strong>On-site pharmacy with prescription and over-the-counter medications</strong></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Wellness Programs</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Health Checkups</h3>
+                    <p>Routine checkups for overall health assessment.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Nutrition Counseling</h3>
+                    <p>Personalized nutrition advice for a healthy lifestyle.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Physical Therapy</h3>
+                    <p>Rehabilitation and physical recovery services.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mental Health Support</h3>
+                    <p>Therapies and counseling to support mental well-being.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us: +123-456-7890 | email@example.com</p>
+        <p>Address: 123 Health Ave, Wellness City</p>
+    </footer>
+</body>
+</html>
